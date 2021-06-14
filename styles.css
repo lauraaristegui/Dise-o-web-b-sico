@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+   body{
+    background-color: #eee;
+    color:#333;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    a{
+    text-decoration: none; 
+    color:dodgerblue 
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: darkblue;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #navbar{
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+
+    }
+    #navbar ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+       
+
+    }
+    .lista-sm{
+        display: block;
+    }
+    #navbar li{
+      float:left;
+    }
+
+    #navbar li a{
+        padding:20px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1em;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    #navbar li.active a{
+        color:red;
+    }
+
+    #navbar li a:hover{
+        background-color: coral;
+        color:black
+    }
+    form{
+        max-width: 750px;
+        border:1px solid #ddd;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    form div{
+        padding: 15px;
+    }
+    input{
+        width: 90%;
+        display: block;
+    }
+    button{
+        width: 90%;
+        height: 50px;
+        padding: 15;
+    }
+    .myicono{
+        color:aliceblue;
+        font-size: 1.5em;
+        padding: 10px;
+        display:none;
+    }
+
+        
+
+        #content{
+            max-width: 1180px;
+            position: relative;
+            top:80px;
+            margin:0 auto;
+            background-color: #fff;
+            padding: 2px;
+        }
+
+        #content header{
+        
+            height: 120px;
+            padding: 10px 15px;
+            background-color: #ddd;
+            border-radius: 1em;
+        }
+
+    #principal{
+    width: 40%;
+    float: left;
+    padding: 5px;
+    }
+    #secundario{
+    width: 40%;
+    float: left;
+    padding:5px;
+    }
+
+    #content aside{
+        width: 20%;
+        float: left;
+        padding: 5px;
+
+    }
+
+    #content footer{
+       clear:both;
+        width: 100%;
+        background-color: #ddd;
+        text-align: center;
+        height: 100px;
+        padding: 25px;
+        
+    }
+
+      @media screen and (max-width: 820px){
+        #content{
+            padding: 0;
+            max-width: 100%;
+        }
+        #content header{
+            padding: 0;
+            border-radius: 0;
+        }
+        #principal{
+            padding: 3%;
+            width: 45%;
+        }
+        #secundario{
+            float:right;
+            padding: 3%;
+            width: 45%;
+        }
+        #content aside{
+            clear:both;
+            padding: 5%;
+            width: 100%;
+        }
+        #content footer{
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        #content{
+            width: auto;
+        }
+        #principal{
+            width: auto;
+            float: none;
+            margin: 0px;
+        }
+        #secundario{
+            width: auto;
+            float: none;
+            margin: 0px;
+        }
+        #content aside{
+            padding: 0;
+            width: auto;
+        }
+        #content footer{
+            width: auto;
+            
+        }
+        .lista-sm{
+            display: none;
+        }
+        
+        #navbar li{
+            float: none;
+            display: block;
+        }
+        #navbar li a{
+            padding: 5px;
+            text-align: left;
+            width: 100%;
+        }
+        .myicono{
+            display: block;
+            text-align: right;
+        }
+   
+    }
